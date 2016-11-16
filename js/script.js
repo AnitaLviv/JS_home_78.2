@@ -1,30 +1,51 @@
-function addLoadEvent(func) {
-    var oldonload = window.onload;
-    if (typeof window.onload != 'function') {
-        window.onload = func;
-    } else {
-        window.onload = function() {
-            oldonload();
-            func();
-        }
-    }
-}
+$(function() {
+  
+ $( "#firstname" ).after( "<span class='firstname'>Please enter your firstname.</span>" );
+ $(".firstname").css("opacity", "0");
+    
+ $('#firstname').hover(
+     function(){
+       $(".firstname").animate({
+        opacity: 0.7,
+        }, 1500 );
+     },
+     function(){
+       $(".firstname").animate({
+        opacity: 0,
+        }, 1000 );
+ });
+ 
+  
+  $( "#lastname" ).after( "<span class='lastname'>Please enter your lastname.</span>" );
+ $(".lastname").css("opacity", "0");
+    
+ $('#lastname').hover(
+     function(){
+       $(".lastname").animate({
+        opacity: 0.7,
+        }, 1500 );
+     },
+     function(){
+       $(".lastname").animate({
+        opacity: 0,
+        }, 1000 );
+ });
+ 
+ 
+ $( "#email" ).after( "<span class='email'>Put your email.</span>" );
+ $(".email").css("opacity", "0");
+    
+ $('#email').hover(
+     function(){
+       $(".email").animate({
+        opacity: 0.7,
+        }, 1500 );
+     },
+     function(){
+       $(".email").animate({
+        opacity: 0,
+        }, 1000 );
+ });
+       
 
-function myInputs() {
-    var inputs = document.getElementsByTagName("input");
-    for (var i=0; i<inputs.length; i++){
-               if (inputs[i].parentNode.getElementsByTagName("span")[0]) {
-
-            inputs[i].onfocus = function () {
-                this.parentNode.getElementsByTagName("span")[0].style.display = "inline";
-            }
-
-            inputs[i].onblur = function () {
-                this.parentNode.getElementsByTagName("span")[0].style.display = "none";
-            }
-        }
-    }
-
-}
-addLoadEvent(myInputs);
-
+}); 
