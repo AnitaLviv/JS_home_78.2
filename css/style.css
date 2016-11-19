@@ -1,46 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-	}
 
-form {
-  width: 40%;
-  margin: 20px auto;
+.registration{
+    margin: 0 auto;
+    border:1px solid #2DC4FF; 
+    border-radius: 15px;
+    width: 520px;
+    padding: 20px;
+
+.named{
+    display: inline-block;
 }
 
-fieldset {
-  padding: 10px;
-  background-color: #4CAF50;
-	
+.helpText{
+    display: none;
 }
-
-label {
-  display: inline-block; 
-  width: 5em;
-	
-}
-
-fieldset div {
-  margin-bottom: 20px;
-  padding: 5px;
-	
-}
-
-.firstname,
-.lastname,
-.email {
-  margin-left: 20px;
-  border: 1px solid black;
-  border-radius: 3px;
-  box-shadow: 0px 0px 3px #4CAF50;
-  font-size: 14px;
-  display: inline-block;
-  padding: 5px;
-  background-color: #fff;
-}
-
-
 
 
 
