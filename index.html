@@ -4,34 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Home-work JS7.8/2</title>
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
-   <script src="https://code.jquery.com/jquery.min.js"></script>
-   <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="js/script.js"></script>
 </head>
 <body>
-<div class="registration">
-        <div class="FirstName">
-            <p class="named">FirstName 
-                <input class="named" type="text">
-                <i class="helpText " title="info">Please enter your firstname.</i>
-            </p>
-        </div>
-        
-        <div class="LastName">
-            <p class="named">LastName 
-                <input class="named" type="text">
-                <i class="helpText"  title="info">Please enter your lastname.</i>
-            </p>
-        </div>
-        
-        <div class="Adress">
-            <p class="named">Adress&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input class="named" type="text">
-                <i class="helpText" title="info">Your home address.</i>
-            </p>
-        </div>
-      <button id="btn" class="btn btn-success">Click here</button>
-    </div>
-  </body>
+<form action="#">
+             <label>First name<input type="text" id="first-name"></label><div class="tip first-name">Please enter your<br>firstname.</div><br>
+             <label>Last name<input type="text" id="last-name"></label><div class="tip last-name">Please enter your<br>lastname.</div><br>
+             <label>Address<input type="text" id="address"></label><div class="tip address">Your home address.</div><br>
+             <button class="btn btn-info">Click here</button>
+
+          </form>
+     </body>
 </html>

@@ -1,21 +1,22 @@
-$(function(){
-    var $helpText = $('.helpText');
-    var $btn = $('#btn');
-    
-    $btn.on('click', function(){
-        $helpText.fadeIn(500);   
-    });
-        $('.named').hover(function(e){
-            var $input = $(e.target);
-            $input.siblings($helpText).fadeIn(500);
-        },function(e){
-            var $input = $(e.target);
-            $input.siblings($helpText).fadeOut(500);
-        
-        });
-    
-    
-    
-  
-                 
+
+
+
+$(document).ready(function() {
+
+$("input").hover( function() {
+        var inputId = $(this).attr("id");
+	
+	console.log($("." + inputId));
+        $("." + inputId).animate( {"opacity": "1"}, 200);
+	
+    }, function() {
+        var inputId = $(this).attr("id");
+        $("." + inputId).animate( {"opacity": "0"}, 100);
+
+    } );
+
+   
+    $("button").click( function() {
+        $(".tip").animate({"opacity": "1"}, "fast");
+    } )
 });
