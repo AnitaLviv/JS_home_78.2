@@ -25,15 +25,7 @@ em.help:hover {
  cursor: pointer;
 }
 
-.hints {
-  display: inline-block;
-  padding: 5px 5px 5px 10px;
-  font-size: 1em;
-  border: 1px solid black;
-  border-left-width: 0;
-  border-radius: 0 5px 5px 0;
-  box-shadow: 2px 2px 3px gray;
-} 
+ 
 
 
 

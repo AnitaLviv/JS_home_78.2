@@ -1,18 +1,19 @@
-function createPerson (name,age,job ) {
-    var o = new Object();
-    o.name = name;
-    o.age = age;
-    o.job = job;
-    o.sayName = function(){
-        alert ( this.name );
-    };
-    return o;
-}
+ $('input').hover(showHint, hideHint);
+  $('button.help, em.help').on('click', showHelp);
+  
+  function showHint() {
+    $(this).parent().find('.hint').remove();
+    $(this).parent().append("<span class='hint'>" 
+                + $(this).attr('title') + "</span>");
+  };
 
+  function hideHint() {
+    $(this).parent().find('.hint').remove();
+  };
 
-var person1 = createPerson( "Nicholas" , 29 , "Software Eпgiпeer" );
-var person2 = createPerson( "Greg" , 27, "Doctor" );
+  function showHelp() {
+    $('.form input').each(hideHint);
+    $('.form input').each(showHint);    
+  };
 
-console.log(person1);
-console.log(person2);
-
+});
