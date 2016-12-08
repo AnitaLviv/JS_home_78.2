@@ -1,4 +1,6 @@
- $('input').hover(showHint, hideHint);
+
+
+$('input').hover(showHint, hideHint);
   $('button.help, em.help').on('click', showHelp);
   
   function showHint() {
@@ -12,8 +14,8 @@
   };
 
   function showHelp() {
-    $('.form input').each(hideHint);
-    $('.form input').each(showHint);    
+    $('input').each(hideHint);
+    $('input').each(showHint);    
   };
 
-});
+
